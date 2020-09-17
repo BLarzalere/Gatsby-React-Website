@@ -1,0 +1,43 @@
+{
+  "name": "gatsby-s447-baseline",
+  "version": "2.0",
+  "description": "S447 Custom Metal Art",
+  "author": {
+    "name": "Brent Larzalere"
+  },
+  "dependencies": {
+    "gatsby": "^2.19.5",
+    "gatsby-plugin-manifest": "^2.2.38",
+    "gatsby-plugin-offline": "^2.1.0",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sass": "^2.1.27",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-images": "^0.5.19",
+    "react-scrollspy": "^3.4.2",
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "serve": "gatsby serve",
+    "clean": "rimraf .cache public",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^2.7.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-starter-solidstate"
+  ],
+  "license": "MIT"
+}
